@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+footer {
+    width: 100%;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+
+}
+
+#footer_content {
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 1.5rem;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+
+.footer_list .footer_links {
+    color: #a8a29e;
+    text-decoration: none;
+}
+
+.footer_list .footer_links:hover {
+    color: #f26076;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer_subscribe p {
+    color: #a8a29e;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    border-radius: 4px;
+}
+
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: #ff1e41;
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 2.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+.footer_links img{
+    width: 2.1rem;
+    border-radius: 20px;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+}
+
+h1>img {
+    width: 6rem;
+}
+
+#input_group button img{
+    width: 1.4rem;
+    margin: auto;
+}
+
+.footer_links.local:hover {
+    color: #a8a29e;
+}
+
+.footer_links.local {
+    pointer-events: none;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
+

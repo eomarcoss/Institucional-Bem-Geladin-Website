@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+#container{
+    margin: 0;
+    background-color: #ED2342;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.caixa{
+    font: 16px;
+    height: 100%;
+    width: 40%;
+    background-color: #f6f8ff;
+    padding: 20px;
+    margin: 110px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+#title{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    color: #272727;
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .caixa {
+        width: 80%;
+        margin: 80px 10px 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa {
+        width: 80%;
+        margin: 60px 10px 20px 10px;
+    }
+}
+

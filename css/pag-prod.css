@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: #EEEEEE;
+}
+
+.cartela{
+    background-color: #EEEEEE;
+    display: flex;
+    float: left;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.margin-b{
+    margin-bottom: 80px;
+}
+
+
+.card{
+    width: 220px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card img{
+    width: 220px;
+    height: 260px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card h2{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+/* .card a:link{
+    color: black;
+} */
+
+/* .card a:visited{
+    color: black;
+} */
+
+.card a:hover{
+    /* font-size: large; */
+    text-decoration: underline;
+    opacity: 0.4;
+}
+
+
+.titulo{
+    text-align: center;
+    color: #ED2342;
+    margin-bottom: 0;
+}
+
+.hr-prod{
+    border-color: #ED2342;
+    width: 150px;
+}
+
+
+

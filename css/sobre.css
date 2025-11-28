@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    font: 16px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+}
+
+.titulo{
+    text-align: center;
+    color: #272727;
+    margin-bottom: 0;
+}
+
+.hr-titulo{
+    border-color: #ED2342;
+    width: 9.37em;
+}
+
+.conteudo{
+    text-align: justify;
+}
+
+.conteudo h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.conteudo p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.conteudo ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+
+.negrito{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px){
+    main{
+        margin: 1em;
+    }
+}

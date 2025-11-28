@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    font: 16px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+}
+
+.titulo{
+    text-align: center;
+    color: #272727;
+    margin-bottom: 0;
+}
+
+.hr-titulo{
+    border-color: #ED2342;
+    width: 5em;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    text-align: justify;
+}
+
+.card img{
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.card h1{
+    font-size: 1.2em;
+    color: #444;
+}
+
+.card p{
+    font-size: 1em;
+}
+
+.button-container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.button{
+    background-color: #ED2342; 
+    border-radius: 5px;
+    color: white; 
+    padding: 5px 10px;
+    margin: 0;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 0.7em; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: #e93a54;
+    transition: 0.3s;
+}
+
+.hr-noticia {
+    border: none;
+    border-top: 1px solid #ccc; 
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse; 
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .card img {
+        width: 100%; 
+        margin: 15px 0 0 0;
+        border-radius: 10px;
+    }
+
+    .card h1 {
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .card p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .button-container {
+        margin-bottom: 10px;
+    }
+}

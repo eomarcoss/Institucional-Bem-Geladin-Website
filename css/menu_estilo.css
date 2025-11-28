@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    /* margin: 0; */
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ED2342;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    height: 90%;
+    width: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav_list li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px;
+    font-weight:600;
+}
+
+.nav_list li a:hover{
+    background-color: white;
+    color: #ED2342;
+    padding: 9px;
+    border-radius: 10px;
+}
+
+#revender{
+    padding: 10px;
+    color: #ED2342;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+    text-align: center;
+}
+
+#revender:hover{
+    background-color: #ebebeb;
+}
+
+
+/* RESPONSIDAIOFHAOFHAOHFOA */
+
+/* Botão Hamburguer - escondido por padrão */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    padding-right: 20px;
+}
+
+/* Checkbox escondido */
+#menu-toggle {
+    display: none;
+}
+
+/* Link Quero Revender dentro do menu (mobile) */
+.revender-mobile {
+    display: none;
+}
+
+/* Responsividade */
+@media screen and (max-width: 930px) {
+    #navbar {
+        padding-right: 10px; /* espaço à direita do hambúrguer */
+        height: 90px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: white;
+        padding: 10px; /* mais espaço ao redor do ícone */
+    }
+
+    .nav_list {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ED2342;
+        display: none;
+        gap: 0;
+        z-index: 999;
+    }
+
+    .nav_list li {
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding: 15px 0;
+    }
+
+    #menu-toggle:checked + .hamburger + .nav_list {
+        display: flex;
+    }
+
+    #revender {
+        display: none;
+    }
+
+    .revender-mobile {
+        display: block;
+    }
+}
+
+
