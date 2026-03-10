@@ -13,5 +13,5 @@ O site foi criado com foco em apresentar a marca de forma clara e profissional, 
 - HTML5  
 - CSS3  
 
-## Autores
+## 👨🏻‍💻 Autores
 Marcos Marinho e Júlya Fonseca
